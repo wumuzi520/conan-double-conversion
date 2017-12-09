@@ -1,6 +1,6 @@
 [![Download](https://api.bintray.com/packages/bincrafters/public-conan/double-conversion%3Abincrafters/images/download.svg) ](https://bintray.com/bincrafters/public-conan/double-conversion%3Abincrafters/_latestVersion)
 [![Build Status](https://travis-ci.org/bincrafters/conan-double-conversion.svg?branch=stable%2F3.0.0)](https://travis-ci.org/bincrafters/conan-double-conversion)
-[![Build status](https://ci.appveyor.com/api/projects/status/github/bincrafters/conan-double-conversion?branch=stable%2F3.0.0&svg=true)](https://ci.appveyor.com/project/bincrafters/conan-double-conversion)
+[![Build status](https://ci.appveyor.com/api/projects/status/nhk1rv2mtf12bu5b?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-double-conversion)
 
 [Conan.io](https://conan.io) package recipe for [double-conversion](https://github.com/google/double-conversion).
 
