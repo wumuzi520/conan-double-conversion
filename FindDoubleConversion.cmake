@@ -1,0 +1,18 @@
+#
+# Find DOUBLE_CONVERSION
+#
+#  LIBDOUBLE_CONVERSION_INCLUDE_DIR - where to find double-conversion/double-conversion.h, etc.
+#  LIBDOUBLE_CONVERSION_LIBRARY     - List of libraries when using libdouble-conversion.
+#  LIBDOUBLE_CONVERSION_FOUND       - True if libdouble-conversion found.
+
+FIND_PATH(LIBDOUBLE_CONVERSION_INCLUDE_DIR double-conversion/double-conversion.h)
+
+FIND_LIBRARY(LIBDOUBLE_CONVERSION_LIBRARY NAMES double-conversion)
+
+# handle the QUIETLY and REQUIRED arguments and set LIBDOUBLE_CONVERSION_FOUND to TRUE if
+# all listed variables are TRUE
+INCLUDE(FindPackageHandleStandardArgs)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(DOUBLE_ONVERSION DEFAULT_MSG LIBDOUBLE_CONVERSION_LIBRARY LIBDOUBLE_CONVERSION_INCLUDE_DIR)
+
+MARK_AS_ADVANCED(LIBDOUBLE_CONVERSION_LIBRARY LIBDOUBLE_CONVERSION_INCLUDE_DIR)
+
