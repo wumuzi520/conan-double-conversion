@@ -12,7 +12,7 @@ class DoubleConversionConan(ConanFile):
     description = "Efficient binary-decimal and decimal-binary conversion routines for IEEE doubles."
     license = "https://github.com/google/double-conversion/blob/master/LICENSE"
     generators = "cmake"
-    exports_sources = ["CMakeLists.txt"]
+    exports_sources = ["CMakeLists.txt", "FindDoubleConversion.cmake"]
     settings = "os", "arch", "compiler", "build_type"
     options = {"shared": [True, False], "fPIC": [True, False]}
     default_options = "shared=False", "fPIC=True"
@@ -39,6 +39,7 @@ class DoubleConversionConan(ConanFile):
         cmake.build()
 
     def package(self):
+        self.copy("FindDoubleConversion.cmake", ".", ".")
         self.copy("sources/LICENSE", dst="licenses", keep_path=False)
         self.copy(pattern="*.h", dst="include/double-conversion", src="sources/double-conversion")
         with tools.chdir("sources"):
